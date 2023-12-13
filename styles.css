@@ -77,7 +77,7 @@
 
 form{
     position: relative;
-    padding: 2em 0em;
+    padding: 3em 0em;
     border-top: 2px solid dodgerblue;
     border-bottom: 2px solid dodgerblue;
     width: 90%;
@@ -127,7 +127,7 @@ fieldset{
 }
 
 hr{
-    margin: 2rem 0rem;
+    margin: 3rem 0rem;
     border: 1px solid rgb(163, 163, 163);
 }
 
@@ -160,3 +160,91 @@ hr{
     color: dodgerblue;
 }
 
+@media (max-width: 1400px){
+    form{
+        padding: 2em 0em;
+    }
+
+    hr{
+        margin: 2rem 0rem;
+    }
+
+    .form-control-section{
+        width: 100%;
+    }
+
+    fieldset{
+        display: block;
+    }
+
+    .form-control-section{
+        width: 100%;
+        padding: 0.5em 1em;
+    }
+
+    #login-fieldset{
+        display: flex;
+    }
+}
+
+@media (max-width: 1024px){
+    #content{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #image-strip{
+        width: 100%;
+        height: 50vh;
+    }
+
+    form{
+        margin-top: 3em;
+    }
+
+    #form-section{
+        width: 100%;
+    }
+
+    .form-control-section{
+        width: 100%;
+        padding: 0.5em 1em;
+    }
+
+    #login-fieldset{
+        display: flex;
+    }
+}
+
+@media (max-width: 769px) {
+    #darkened-line{
+        height: 12vh;
+    }
+
+    .form-control-section{
+        width: 100%;
+    }
+
+    fieldset{
+        display: block;
+    }
+
+    #login-fieldset{
+        display: flex;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 480px) {
+    #login-fieldset{
+        display: block;
+    }
+
+    #btn-container{
+        width: 100%;
+    }
+
+    #login-container{
+        width: 100%;
+        align-items: center;
+    }
+}
