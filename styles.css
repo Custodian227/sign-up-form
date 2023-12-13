@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Play;
+}
+
+@font-face {
+    font-family: Norse-Bold;
+    src: url(fonts/Norse-Bold\ \(1\).otf);
+  }
+
+#content{
+    display: flex;
+}
+
+#image-strip{
+    position: relative;
+    width: max(40%, 600px);
+    height: 100vh;
+    filter: brightness(0.8) contrast(1.4);
+    background-image: url(images/snowy-mountains01.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#darkened-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 20vh;
+    background-color: rgb(0, 0, 0, 0.6);
+    transform: translateY(9vh);
+}
+
+#darkened-line img{
+    height: 75%;
+}
+
+#darkened-line h1{
+    font-family: Norse-Bold;
+    color: white;
+    font-size: 5em;
+}
+
+#image-reference{
+    position: absolute;
+    width: 100%;
+    height: 2vh;
+    bottom: 20px;
+    color: black;
+    text-align: start;
+    padding: 0em 1em;
+    font-size: 1em;
+}
+
+#form-section{
+    position: relative;
+    width: 60%;
+}
+
+#form-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#form-container > p{
+    width: 80%;
+    margin-bottom: 4rem; 
+}
+
+form{
+    position: relative;
+    padding: 2em 0em;
+    border-top: 2px solid dodgerblue;
+    border-bottom: 2px solid dodgerblue;
+    width: 90%;
+}
+
+legend{
+    position: absolute;
+    top: -2vh;
+    left: 1em;
+    font-size: 2em;
+    background-color: white;
+    color: dodgerblue
+}
+
+form label{
+    line-height: 1.8em;
+    display: block;
+}
+
+input{
+    border-style: none;
+    outline: 1px solid rgb(163, 163, 163);
+    line-height: 1.8;
+    width: 100%;
+    font-size: 1.8em;
+    padding: 0em 0.5em;
+}
+
+input:focus{
+    outline: 1px solid dodgerblue;
+}
+
+fieldset{
+    display: flex;
+    justify-content: space-between;
+    border-style: none;
+}
+
+.form-control-section{
+    width: 50%;
+    padding: 1em;
+}
+
+#btn-container{
+    padding: 1rem;
+    width: 50%;
+}
+
+hr{
+    margin: 2rem 0rem;
+    border: 1px solid rgb(163, 163, 163);
+}
+
+#login-fieldset{
+    width: 100%;
+}
+
+#btn-submit{
+    padding: 1rem;
+    width: 100%;
+    background-color: dodgerblue;
+    font-size: 1.6rem;
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+}
+
+#login-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 1.2em;
+}
+
+#login-container > a{
+    text-decoration: underline;
+    color: dodgerblue;
+}
+
