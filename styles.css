@@ -45,17 +45,6 @@
     font-size: 5em;
 }
 
-#image-reference{
-    position: absolute;
-    width: 100%;
-    height: 2vh;
-    bottom: 20px;
-    color: black;
-    text-align: start;
-    padding: 0em 1em;
-    font-size: 1em;
-}
-
 #form-section{
     position: relative;
     width: 60%;
@@ -97,18 +86,25 @@ form label{
     display: block;
 }
 
+
 input{
     border-style: none;
     outline: 1px solid rgb(163, 163, 163);
     line-height: 1.8;
     width: 100%;
-    font-size: 1.8em;
+    font-size: 1.4em;
     padding: 0em 0.5em;
 }
 
 input:focus{
     outline: 1px solid dodgerblue;
 }
+
+.validation-message{
+    color: red;
+}
+
+
 
 fieldset{
     display: flex;
@@ -117,13 +113,13 @@ fieldset{
 }
 
 .form-control-section{
-    width: 50%;
+    width: 47.5%;
     padding: 1em;
 }
 
 #btn-container{
     padding: 1rem;
-    width: 50%;
+    width: 47.5%;
 }
 
 hr{
@@ -139,14 +135,14 @@ hr{
     padding: 1rem;
     width: 100%;
     background-color: dodgerblue;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: white;
     border-style: none;
     border-radius: 5px;
 }
 
 #login-container{
-    width: 50%;
+    width: 47.5%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -234,7 +230,7 @@ hr{
     }
 }
 
-@media (min-width: 300px) and (max-width: 480px) {
+@media (min-width: 601px) and (max-width: 480px) {
     #login-fieldset{
         display: block;
     }

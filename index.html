@@ -17,40 +17,40 @@
                     <img src="images/odin-lined.png">
                     <h1>ODIN</h1>
                 </div>
-                <p id="image-reference">Image found on aipict.com, category snowy mountains</p>
+
             </div>
             <div id="form-section">
                 <div id="form-container">
                     <form>
                         <legend>Sign Up Form</legend>
                         <fieldset>
-                            <div class="form-control-section">
-                                <label>First Name</label>
-                                <input>
+                            <div id="first-name-section" class="form-control-section">
+                                <label for="input-first-name">First Name</label>
+                                <input id="input-first-name" class="form-input" type="text" required>
                             </div>
-                            <div class="form-control-section">
-                                <label>Last Name</label>
-                                <input>
-                            </div>
-                        </fieldset>
-                        <fieldset>
-                            <div class="form-control-section">
-                                <label>E-mail</label>
-                                <input>                            
-                            </div>
-                            <div class="form-control-section">
-                                <label>Phone Number</label>
-                                <input> 
+                            <div id="last-name-section" class="form-control-section">
+                                <label for="input-last-name">Last Name</label>
+                                <input id="input-last-name" class="form-input" type="text" required>
                             </div>
                         </fieldset>
                         <fieldset>
-                            <div class="form-control-section">
-                                <label>Password</label>
-                                <input>
+                            <div id="email-section" class="form-control-section">
+                                <label for="input-email">E-mail</label>
+                                <input id="input-email" class="form-input" type="email" placeholder="your@email.com" required>                            
                             </div>
-                            <div class="form-control-section">
-                                <label>Confirm Password</label>
-                                <input>
+                            <div id="phone-section" class="form-control-section">
+                                <label for="input-phone">Phone Number</label>
+                                <input id="input-phone" class="form-input" type="tel" placeholder="xxx-xxx-xxxx"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required minlength="10"> 
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <div id="password-section" class="form-control-section">
+                                <label for="input-password">Password</label>
+                                <input id="input-password" class="form-input" type="password" required minlength="8">
+                            </div>
+                            <div  id="password-conformation-section" class="form-control-section">
+                                <label for="input-password-conformation">Confirm Password</label>
+                                <input id="input-password-conformation" class="form-input" type="password" required aria-describedby="password-conformation-validation">
                             </div>
                         </fieldset>
                         <hr>
@@ -66,7 +66,9 @@
                     </form>
                 </div>
             </div>
-         
         </div>
+
+        <script src="form.js"></script>
+
     </body>
 </html>
